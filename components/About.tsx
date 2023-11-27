@@ -44,9 +44,9 @@ const About = () => {
             </h2>
             <p className="text-justify">
               Regardless of your industry, a website is essential for your
-              business today. However, it's not enough to just have a website:
-              it should be clear, fast, mobile-friendly, flexible, and, of
-              course, easily discoverable.
+              business today. However, it&apos;s not enough to just have a
+              website: it should be clear, fast, mobile-friendly, flexible, and,
+              of course, easily discoverable.
             </p>
             <p className="text-justify">
               Our team is always oriented towards the changing trends and

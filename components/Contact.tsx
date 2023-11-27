@@ -18,11 +18,11 @@ const Contact = () => {
         <div className="flex flex-col gap-8 text-center md:flex-row md:text-start lg:flex-col lg:gap-[60px]">
           <div className="flex flex-col justify-center gap-6">
             <h2 className="text-3xl font-bold xl:text-[40px]">
-              Let's Talk – It's Absolutely Free!
+              Let&apos;s Talk – It&apos;s Absolutely Free!
             </h2>
             <p className="text-xl opacity-80 xl:text-2xl">
-              Discuss your project and goals with us, and let's find the best
-              solution.
+              Discuss your project and goals with us, and let&apos;s find the
+              best solution.
             </p>
           </div>
           <div className="flex shrink-0 flex-col gap-10 md:gap-5 lg:gap-10">
