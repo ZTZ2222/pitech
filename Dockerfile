@@ -11,6 +11,10 @@ COPY package*.json ./
 RUN npm install -g npm@latest
 RUN npm install
 
+ENV NEXT_PUBLIC_API_URL=http://167.71.95.216
+ENV NEXT_PUBLIC_EMAIL="tzamirov@gmail.com"
+ENV NEXT_PUBLIC_PHONE="+996 (700) 355-350"
+
 # Copy the rest of the application code to the container
 COPY . .
 
