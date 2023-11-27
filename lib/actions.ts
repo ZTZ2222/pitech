@@ -23,20 +23,23 @@ export const createOrder = async (prevState: State, formData: FormData) => {
 
   try {
     // 2 second delay with promise resolver
-    const response = await fetch("http://167.71.95.216/api/requests/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-CSRFToken": Cookies.get("csrftoken") || "",
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/requests/`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRFToken": Cookies.get("csrftoken") || "",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          message,
+        }),
+        credentials: "include",
       },
-      body: JSON.stringify({
-        name,
-        email,
-        phone,
-        message,
-      }),
-      credentials: "include",
-    });
+    );
 
     if (response.ok) {
       return {

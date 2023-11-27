@@ -45,7 +45,7 @@ const Contact = () => {
                     {process.env.NEXT_PUBLIC_EMAIL}
                   </span>
                 </Link>
-                <CopyButton textToCopy={`${process.env.NEXT_PUBLIC_EMAIL}`} />
+                <CopyButton textToCopy={process.env.NEXT_PUBLIC_EMAIL!} />
               </div>
             </div>
             {/* Наш телефон */}
@@ -67,7 +67,7 @@ const Contact = () => {
                     {process.env.NEXT_PUBLIC_PHONE}
                   </span>
                 </Link>
-                <CopyButton textToCopy={`${process.env.NEXT_PUBLIC_PHONE}`} />
+                <CopyButton textToCopy={process.env.NEXT_PUBLIC_PHONE!} />
               </div>
             </div>
             {/* Наши соцсети */}

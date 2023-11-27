@@ -35,10 +35,10 @@ export default function Loading({ setLoading }: LoadingProps) {
         className="text-9xl"
       >
         <h1 className="absolute -right-5 top-10 -z-10 rotate-12 text-6xl font-bold opacity-20 lg:text-8xl xl:right-0 xl:top-24">
-          Веб-дизайн
+          Web Design
         </h1>
         <h2 className="absolute left-5 top-[40%] -z-10 rotate-12 text-7xl font-bold opacity-10 md:left-20 md:top-[30%] lg:top-[40%] lg:text-9xl xl:top-1/3">
-          Разработка
+          Development
         </h2>
         <h3
           className={cn(
@@ -57,7 +57,7 @@ export default function Loading({ setLoading }: LoadingProps) {
           Digital Marketing
         </h4>
         <h5 className="absolute bottom-[25%] right-0 -z-10 rotate-12 text-6xl font-bold opacity-5 md:bottom-[30%] md:right-10 xl:bottom-20 xl:left-1/3">
-          Оптимизация
+          Optimization
         </h5>
         <h6
           className={cn(
@@ -68,10 +68,10 @@ export default function Loading({ setLoading }: LoadingProps) {
           UX/UI
         </h6>
         <p className="absolute bottom-10 left-3 -z-10 rotate-12 text-6xl font-extralight opacity-5">
-          Графика
+          Graphics
         </p>
         <p className="absolute left-4 top-[15%] -z-10 rotate-12 text-3xl font-semibold opacity-5 md:left-12 md:top-[8%] lg:left-0 lg:top-[5%] lg:text-5xl">
-          Продвижение Аналитика
+          Promotion Analytics
         </p>
       </motion.div>
       <ImageBlock
