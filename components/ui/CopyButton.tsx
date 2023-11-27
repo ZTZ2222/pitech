@@ -29,11 +29,11 @@ const CopyButton: React.FC<CopyButtonProps> = ({ textToCopy }) => {
   return (
     <button className="" onClick={copyToClipboard}>
       {!isCopied ? (
-        <Tooltip content="Скопировать">
+        <Tooltip content="Copy">
           <DocumentDuplicateIcon className="w-5 animate-vanish fill-dark-blue md:w-7" />
         </Tooltip>
       ) : (
-        <Tooltip content="Запись скопирована">
+        <Tooltip content="Copied">
           <CheckBadgeIcon className="w-5 animate-vanish fill-dark-blue md:w-7" />
         </Tooltip>
       )}
