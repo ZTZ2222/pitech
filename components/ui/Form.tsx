@@ -38,13 +38,13 @@ export const Form = () => {
         variants={itemVariants}
         className="mb-5 text-xl font-bold text-white lg:text-2xl xl:mb-6"
       >
-        Оставьте нам сообщение, и мы обязательно свяжемся с вами.
+        Explain your project and schedule a meeting today.
       </motion.h2>
       <FloatingLabel
         variants={itemVariants}
         id="name"
         name="name"
-        label="Имя"
+        label="Name"
         autoComplete="given-name"
         errors={state.errors?.name}
       />
@@ -61,7 +61,7 @@ export const Form = () => {
         variants={itemVariants}
         id="phone"
         name="phone"
-        label="Телефон"
+        label="Phone"
         type="tel"
         autoComplete="tel"
         errors={state.errors?.phone}
@@ -70,7 +70,7 @@ export const Form = () => {
         variants={itemVariants}
         id="message"
         name="message"
-        title="Сообщение"
+        title="Message"
         className="mt-3"
         autoComplete="off"
         errors={state.errors?.message}

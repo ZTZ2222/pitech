@@ -45,9 +45,9 @@ const Hero = () => {
             transition={{ duration: 1, ease: "easeInOut" }}
             className="shrink-0 text-center text-4xl font-bold leading-tight tracking-[0.65px] text-white md:text-start md:text-[42px] xl:text-5xl 2xl:text-7xl"
           >
-            Делаем сайты которые увеличат ваши{" "}
+            Creating websites that will boost your{" "}
             <span className="relative">
-              продажи
+              sales
               <Underline className="absolute -bottom-2 right-0 h-[15px] w-[160px] md:h-[17px] md:w-[190px] lg:-bottom-3 xl:h-[19px] xl:w-[220px]" />
             </span>
           </motion.h1>
@@ -56,8 +56,8 @@ const Hero = () => {
             transition={{ duration: 1, ease: "easeInOut" }}
             className="text-center text-lg text-white opacity-90 md:text-start lg:text-xl xl:text-[28px] xl:leading-9 xl:tracking-[0.28px]"
           >
-            Трансформация бизнеса с помощью потрясающего дизайна и эффективного
-            цифрового маркетинга
+            Transform your business with stunning design and powerful digital
+            marketing
           </motion.p>
           <motion.div
             className="mx-auto mt-[10px] md:mx-0 md:mr-auto"

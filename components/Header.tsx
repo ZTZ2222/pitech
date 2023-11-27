@@ -21,21 +21,26 @@ const NavLink: FC<NavLinkProps> = ({
   setIsOpen,
   ...props
 }) => (
-  <Link
-    to={href}
-    smooth={true}
-    duration={700}
-    onClick={() => setIsOpen(false)}
-    {...props}
-    className={cn(
-      "cursor-pointer transition duration-300 2xl:text-lg",
-      bgColored === "colored"
-        ? "text-white hover:text-dark-blue"
-        : "text-dark-blue hover:text-flame",
-    )}
+  <motion.div
+    whileHover={{ scale: 1.1, textShadow: "0 0 8px rgb(255, 69, 0, 0.5)" }}
+    transition={{ type: "spring", stiffness: 400, damping: 10 }}
   >
-    {text}
-  </Link>
+    <Link
+      to={href}
+      smooth={true}
+      duration={700}
+      onClick={() => setIsOpen(false)}
+      {...props}
+      className={cn(
+        "cursor-pointer transition duration-300 2xl:text-lg",
+        bgColored === "colored"
+          ? "text-white hover:text-dark-blue"
+          : "text-dark-blue hover:text-flame",
+      )}
+    >
+      {text}
+    </Link>
+  </motion.div>
 );
 
 const Header = () => {
@@ -60,6 +65,25 @@ const Header = () => {
     }
   });
 
+  const links = [
+    {
+      href: "about",
+      text: "About us",
+    },
+    {
+      href: "features",
+      text: "Services",
+    },
+    {
+      href: "portfolio",
+      text: "Portfolio",
+    },
+    {
+      href: "contact",
+      text: "Contact",
+    },
+  ];
+
   return (
     <motion.header
       key="header"
@@ -68,9 +92,9 @@ const Header = () => {
         visible: { y: 0 },
       }}
       animate={hidden ? "hidden" : "visible"}
-      transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
+      transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
       className={cn(
-        "sticky top-0 z-50 transition-colors duration-700",
+        "sticky top-0 z-50 transition-colors duration-500",
         background === "colored"
           ? "border-b border-gray-100 bg-gradient-to-r from-custom-bg1 to-custom-bg2"
           : "bg-gray-100",
@@ -110,30 +134,15 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="ml-auto hidden gap-16 xl:flex">
-          <NavLink
-            setIsOpen={setIsOpen}
-            bgColored={background}
-            href="about"
-            text="О нас"
-          />
-          <NavLink
-            setIsOpen={setIsOpen}
-            bgColored={background}
-            href="features"
-            text="Услуги"
-          />
-          <NavLink
-            setIsOpen={setIsOpen}
-            bgColored={background}
-            href="portfolio"
-            text="Портфолио"
-          />
-          <NavLink
-            setIsOpen={setIsOpen}
-            bgColored={background}
-            href="contact"
-            text="Контакты"
-          />
+          {links.map((link) => (
+            <NavLink
+              key={link.href}
+              setIsOpen={setIsOpen}
+              bgColored={background}
+              href={link.href}
+              text={link.text}
+            />
+          ))}
         </nav>
         <div className="mx-5">
           <RequestButton to="contact" className="hidden xl:inline-flex" />
@@ -151,10 +160,14 @@ const Header = () => {
             isOpen ? "absolute" : "hidden",
           )}
         >
-          <NavLink setIsOpen={setIsOpen} href="about" text="О нас" />
-          <NavLink setIsOpen={setIsOpen} href="features" text="Услуги" />
-          <NavLink setIsOpen={setIsOpen} href="portfolio" text="Портфолио" />
-          <NavLink setIsOpen={setIsOpen} href="contact" text="Контакты" />
+          {links.map((link) => (
+            <NavLink
+              key={link.href}
+              setIsOpen={setIsOpen}
+              href={link.href}
+              text={link.text}
+            />
+          ))}
           <RequestButton setIsOpen={setIsOpen} to="contact" />
         </nav>
       </div>

@@ -12,25 +12,26 @@ const Contact = () => {
       name="contact"
       className="mb-[80px] flex flex-col items-center justify-center"
     >
-      <SectionName>Контакты</SectionName>
+      <SectionName>Contact</SectionName>
       <div className="relative mx-5 flex max-w-lg flex-col items-center justify-between gap-16 md:max-w-none lg:flex-row">
         {/* Contact */}
         <div className="flex flex-col gap-8 text-center md:flex-row md:text-start lg:flex-col lg:gap-[60px]">
           <div className="flex flex-col justify-center gap-6">
             <h2 className="text-3xl font-bold xl:text-[40px]">
-              Давайте пообщаемся – это абсолютно бесплатно!
+              Let's Talk – It's Absolutely Free!
             </h2>
             <p className="text-xl opacity-80 xl:text-2xl">
-              Обсудим ваши проекты и цели, и найдем лучшие решения.
+              Discuss your project and goals with us, and let's find the best
+              solution.
             </p>
           </div>
           <div className="flex shrink-0 flex-col gap-10 md:gap-5 lg:gap-10">
             {/* Наша почта */}
             <div className="flex flex-col items-center gap-2 md:items-start lg:gap-3.5">
-              <p className="text-lg xl:text-xl">Наша почта:</p>
+              <p className="text-lg xl:text-xl">Email Us:</p>
               <div className="flex gap-5">
                 <Link
-                  href="mailto:tzamirov@gmail.com"
+                  href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
                   className="flex w-fit items-center justify-center gap-3 hover:underline md:justify-start"
                 >
                   <Image
@@ -41,18 +42,18 @@ const Contact = () => {
                     className="h-[22px] w-[31px] xl:h-[30px] xl:w-[42px]"
                   />
                   <span className="text-2xl xl:text-[28px]">
-                    tzamirov@gmail.com
+                    {process.env.NEXT_PUBLIC_EMAIL}
                   </span>
                 </Link>
-                <CopyButton textToCopy="tzamirov@gmail.com" />
+                <CopyButton textToCopy={`${process.env.NEXT_PUBLIC_EMAIL}`} />
               </div>
             </div>
             {/* Наш телефон */}
             <div className="flex flex-col items-center gap-2 md:items-start lg:gap-3.5">
-              <p className="text-lg xl:text-xl">Наш телефон:</p>
+              <p className="text-lg xl:text-xl">Phone:</p>
               <div className="flex gap-5">
                 <Link
-                  href="tel:+996(700)355-350"
+                  href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
                   className="flex w-fit items-center justify-center gap-3 hover:underline md:justify-start"
                 >
                   <Image
@@ -63,15 +64,15 @@ const Contact = () => {
                     className="h-[26px] w-[26px] xl:h-[35px] xl:w-[35px]"
                   />
                   <span className="text-2xl xl:text-[28px]">
-                    +996 (700) 355-350
+                    {process.env.NEXT_PUBLIC_PHONE}
                   </span>
                 </Link>
-                <CopyButton textToCopy="+996 (700) 355-350" />
+                <CopyButton textToCopy={`${process.env.NEXT_PUBLIC_PHONE}`} />
               </div>
             </div>
             {/* Наши соцсети */}
             <div className="flex flex-col gap-2 lg:gap-3.5">
-              <p className="text-lg xl:text-xl">Мы в соцсетях:</p>
+              <p className="text-lg xl:text-xl">Social Media:</p>
               <div className="flex justify-center gap-6 md:justify-start">
                 {/* WhatsApp */}
                 <Link

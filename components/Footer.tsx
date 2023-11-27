@@ -1,6 +1,24 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
+  const links = [
+    {
+      href: "about",
+      text: "About us",
+    },
+    {
+      href: "features",
+      text: "Services",
+    },
+    {
+      href: "portfolio",
+      text: "Portfolio",
+    },
+    {
+      href: "how_it_works",
+      text: "How it works",
+    },
+  ];
   return (
     <footer className="flex flex-col gap-3 py-7">
       <hr className="h-[1px] w-full border-custom-gray opacity-20" />
@@ -25,39 +43,18 @@ const Footer = () => {
             />
           </svg>
         </a>
-        <nav className="flex flex-wrap justify-around gap-x-12 gap-y-3">
-          <Link
-            to="about"
-            smooth={true}
-            duration={700}
-            className="cursor-pointer hover:text-flame 2xl:text-lg"
-          >
-            О нас
-          </Link>
-          <Link
-            to="features"
-            smooth={true}
-            duration={700}
-            className="cursor-pointer hover:text-flame 2xl:text-lg"
-          >
-            Услуги
-          </Link>
-          <Link
-            to="portfolio"
-            smooth={true}
-            duration={700}
-            className="cursor-pointer hover:text-flame 2xl:text-lg"
-          >
-            Портфолио
-          </Link>
-          <Link
-            to="how_it_works"
-            smooth={true}
-            duration={700}
-            className="cursor-pointer hover:text-flame 2xl:text-lg"
-          >
-            Как это работает?
-          </Link>
+        <nav className="mx-5 flex flex-wrap justify-between gap-x-12 gap-y-3">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              to={link.href}
+              smooth={true}
+              duration={700}
+              className="cursor-pointer hover:text-flame 2xl:text-lg"
+            >
+              {link.text}
+            </Link>
+          ))}
         </nav>
       </div>
       <span className="container mx-auto text-center text-xl">

@@ -8,17 +8,15 @@ import SectionName from "./ui/SectionName";
 const Portfolio = () => {
   return (
     <Element name="portfolio" className="container mx-auto flex flex-col">
-      <SectionName>Портфолио</SectionName>
+      <SectionName>Portfolio</SectionName>
       {/* Desktop */}
       <div className="mx-5 hidden flex-col items-center gap-20 lg:flex">
         {/* Card 1 */}
         <PortfolioCard
           rightFront
-          badges={["SPA", "Веб-дизайн", "React", "Лого"]}
+          badges={["SPA", "Web Design", "React", "Logo"]}
           title="Chef Catering"
-          description="Повышение узнаваемости бренда компании, предоставляющей кейтеринг
-        услуги. Задачей было сделать компанию более видимой в онлайне и
-        привлечь новых клиентов."
+          description="Enhancing the brand recognition of a catering company. The goal was to make the company more visible online and attract new clients."
           imageSrc="/images/portfolio/case_image_1.png"
         />
         {/* Horizontal line */}
@@ -32,9 +30,9 @@ const Portfolio = () => {
         </div>
         {/* Card 2 */}
         <PortfolioCard
-          badges={["SPA", "Веб-дизайн", "React", "Лого"]}
+          badges={["SPA", "Web Design", "React", "Logo"]}
           title="HarmonyOm"
-          description="Наша задача состояла в том, чтобы сделать студию более доступной и привлекательной для практикующих йогу, а также увеличить базу клиентов и повысить уровень участия."
+          description="Our goal was to make the studio more accessible and appealing to yoga practitioners, as well as to increase the client base and enhance participation levels."
           imageSrc="/images/portfolio/case_image_2.png"
         />
         {/* Horizontal line */}
@@ -49,20 +47,18 @@ const Portfolio = () => {
         {/* Card 3 */}
         <PortfolioCard
           rightFront
-          badges={["Сайт", "Веб-дизайн", "Django"]}
-          title="АвтоМастер"
-          description="Задачей было разработать информативный и удобный веб-сайт с доступом к информации о услугах, ценах, акциях компании и онлайн-записью на прием."
+          badges={["Website", "Web Design", "Django"]}
+          title="AutoMaster"
+          description="The goal was to develop an informative and user-friendly website with access to information about the company's services, prices, promotions, and online appointment scheduling."
           imageSrc="/images/portfolio/case_image_3.png"
         />
       </div>
       {/* Mobile */}
       <div className="mx-5 flex flex-col gap-10 lg:hidden">
         <PortfolioCardMobile
-          caseNumber="Кейс №1"
+          caseNumber="Case №1"
           title="Chef Catering"
-          description="Повышение узнаваемости бренда компании, предоставляющей кейтеринг
-            услуги. Задачей было сделать компанию более видимой в онлайне и
-            привлечь новых клиентов."
+          description="Enhancing the brand recognition of a catering company. The goal was to make the company more visible online and attract new clients."
         />
         <div className="relative h-[1px] w-full">
           <Image
@@ -73,11 +69,9 @@ const Portfolio = () => {
           />
         </div>
         <PortfolioCardMobile
-          caseNumber="Кейс №2"
+          caseNumber="Case №2"
           title="HarmonyOm"
-          description="Наша задача состояла в том, чтобы сделать студию более доступной и
-            привлекательной для практикующих йогу, а также увеличить базу
-            клиентов и повысить уровень участия."
+          description="Our goal was to make the studio more accessible and appealing to yoga practitioners, as well as to increase the client base and enhance participation levels."
         />
         <div className="relative h-[1px] w-full">
           <Image
@@ -88,11 +82,9 @@ const Portfolio = () => {
           />
         </div>
         <PortfolioCardMobile
-          caseNumber="Кейс №3"
-          title="АвтоМастер"
-          description="Задачей было разработать информативный и удобный веб-сайт с доступом
-            к информации о услугах, ценах, акциях компании и онлайн-записью на
-            прием."
+          caseNumber="Case №3"
+          title="AutoMaster"
+          description="The goal was to develop an informative and user-friendly website with access to information about the company's services, prices, promotions, and online appointment scheduling."
         />
       </div>
       <Circles className="absolute -left-[25%] top-[32%] -z-50 max-h-max w-1/2" />

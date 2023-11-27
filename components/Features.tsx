@@ -7,45 +7,47 @@ import SectionName from "./ui/SectionName";
 const featureList = [
   {
     iconPath: "/images/features/monitor-icon.svg",
-    title: "Адаптивный Дизайн",
+    title: "Adaptive Design",
     description:
-      "Создаем веб-сайты, которые впечатляют внешним видом и отлично работают на всех устройствах.",
+      "Crafting websites that impress visually and perform exceptionally on all devices.",
   },
   {
     iconPath: "/images/features/seo-icon.svg",
-    title: "SEO Оптимизация",
+    title: "SEO Optimization",
     description:
-      "Повысим ваш рейтинг в поисковых системах и привлечем больше трафика на ваш сайт.",
+      "Elevate your search engine ranking and attract more traffic to your site.",
   },
   {
     iconPath: "/images/features/social-icon.svg",
-    title: "Продвижение в Соцсетях",
+    title: "Social Media Promotion",
     description:
-      "Общайтесь со своей аудиторией и расширяйте свой охват благодаря плавной интеграции с социальными сетями.",
+      "Engage with your audience and expand your reach through seamless integration with social networks.",
   },
   {
     iconPath: "/images/features/bot-icon.svg",
-    title: "Разработка Ботов",
+    title: "Bot Development",
     description:
-      "Создаем ботов для сбора данных и чат-ботов, автоматизируя процессы и улучшая взаимодействие с клиентами.",
+      "Building data collection bots and chatbots, automating processes, and enhancing customer interaction.",
   },
 ];
 
 const Features = () => {
   return (
     <Element name="features" className="container mx-auto flex flex-col">
-      <SectionName>Услуги</SectionName>
+      <SectionName>Features</SectionName>
       <div className="relative mx-5 flex flex-col items-center justify-center gap-12 lg:flex-row lg:gap-5 xl:justify-between xl:gap-[77px]">
         <div className="flex flex-col justify-center gap-6 text-center md:max-w-full lg:max-w-[600px] lg:gap-10 lg:text-start xl:max-w-[600px] xl:gap-16">
           <h2 className="text-2xl font-bold md:text-4xl lg:text-4xl xl:text-[46px]">
-            Преобразите свой онлайн-облик с помощью современного дизайна
+            Elevate your online presence with the help of modern design
           </h2>
           <p className="text-sm opacity-60 md:text-base lg:text-xl">
-            Наши услуги веб-дизайна и цифрового маркетинга созданы с учетом
-            ваших уникальных потребностей. Мы сочетаем креативность, стратегию и
-            технологии для достижения исключительных результатов
+            Our web design and digital marketing services are crafted with your
+            unique needs in mind. We blend creativity, strategy, and technology
+            to achieve exceptional results
           </p>
-          <RequestButton to="contact" className="self-center lg:self-start" />
+          <div className="mx-auto lg:mx-0">
+            <RequestButton to="contact" className="self-center lg:self-start" />
+          </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-6">
           {featureList.map((feature, index) => (

@@ -14,7 +14,7 @@ export const createOrder = async (prevState: State, formData: FormData) => {
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
-      message: "Пожалуйста, укажите все необходимые данные.",
+      message: "Please provide all the necessary information.",
       success: false,
     };
   }
@@ -23,7 +23,7 @@ export const createOrder = async (prevState: State, formData: FormData) => {
 
   try {
     // 2 second delay with promise resolver
-    const response = await fetch("http://127.0.0.1:8000/api/requests/", {
+    const response = await fetch("http://167.71.95.216/api/requests/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,19 +41,19 @@ export const createOrder = async (prevState: State, formData: FormData) => {
     if (response.ok) {
       return {
         errors: null,
-        message: "Заявка успешно создана!",
+        message: "Request successfully created!",
         success: true,
       };
     } else {
       return {
         errors: null,
-        message: "Ошибка при создании заявки.",
+        message: "Error creating the request.",
         success: false,
       };
     }
   } catch (error) {
     return {
-      message: "Технические проблемы. Пожалуйста, повторите позже.",
+      message: "Technical issues. Please try again later.",
       success: false,
     };
   }

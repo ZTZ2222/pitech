@@ -8,7 +8,7 @@ import StepCircle from "./ui/StepCircle";
 const HowItWorks = () => {
   return (
     <Element name="how_it_works" className="flex flex-col items-center pb-5">
-      <SectionName>Как это работает</SectionName>
+      <SectionName>How it works</SectionName>
       {/* Заголовок */}
       <h1 className="relative mb-20 flex items-end gap-[10px] text-2xl font-medium md:text-[40px]">
         <Image
@@ -18,7 +18,7 @@ const HowItWorks = () => {
           height={79}
           className="h-[40px] w-[30px] md:h-[79px] md:w-[60px]"
         />
-        <span>шагов к собственному сайту</span>
+        <span className="mb-3">Steps to Your Own Website</span>
       </h1>
       {/* Desktop */}
       <div className="hidden grid-cols-25 grid-rows-25 md:h-[1230px] md:w-[728px] lg:grid lg:h-[1400px] lg:w-[829px] xl:h-[2000px] xl:w-[1184px]">
@@ -33,8 +33,8 @@ const HowItWorks = () => {
         <StepCard
           className="step-text-1 my-1 lg:my-7 xl:my-[38px]"
           shadowSide="right"
-          title="Бесплатная консультация"
-          description="Во время бесплатной консультации мы сначала вместе обсудим, как должен выглядеть ваш новый сайт. Мы приветствуем ваши собственные идеи на этом этапе. После обсуждения мы подготовим для вас ни к чему не обязывающее предложение, в котором обеспечим индивидуальные решения по справедливым ценам."
+          title="Free consultation"
+          description="During the free consultation, we will first discuss how your new website should look. We welcome your own ideas at this stage. After the discussion, we will prepare a non-binding proposal for you, providing individual solutions at fair prices."
         />
         <StepCircle
           className="step-circle-1 translate-x-4 translate-y-12"
@@ -66,8 +66,8 @@ const HowItWorks = () => {
         <StepCard
           className="step-text-2 my-1 lg:my-7 xl:my-[38px]"
           shadowSide="left"
-          title="Создание концепции"
-          description="Вам нравится наше предложение? Затем мы сразу приступим к его реализации и создадим концепцию вашего сайта. Ваш корпоративный дизайн служит для нас основой для обеспечения постоянного внешнего вида вашей компании в Интернете и в то же время для поддержки узнаваемости вашего нового веб-сайта."
+          title="Concept Development"
+          description="Do you like our proposal? Then we will immediately start its implementation and create the concept for your website. Your corporate design serves as the foundation for us to ensure a consistent online appearance for your company while supporting the recognition of your new website."
         />
         <StepCircle
           className="step-circle-2 translate-x-4 translate-y-12"
@@ -99,8 +99,8 @@ const HowItWorks = () => {
         <StepCard
           className="step-text-3 my-1 lg:my-7 xl:my-[38px]"
           shadowSide="right"
-          title="Презентация"
-          description="Теперь твоя очередь! Представляя предварительную концепцию, вы можете сообщить нам свои пожелания по корректировке и оптимизации, чтобы ваш новый сайт точно соответствовал вашим идеям и требованиям вашей целевой группы – мы всегда учитываем это при планировании вашего веб-дизайна."
+          title="Presentation"
+          description="Now it's your turn! Introducing the preliminary concept, you can share with us your preferences for adjustments and optimizations, ensuring that your new website precisely aligns with your ideas and the requirements of your target audience – we always take this into account when planning your web design."
         />
         <StepCircle
           className="step-circle-3 -translate-x-2 translate-y-12"
@@ -132,8 +132,8 @@ const HowItWorks = () => {
         <StepCard
           className="step-text-4 my-5 lg:my-12 xl:my-[66px]"
           shadowSide="left"
-          title="Реализация и тестирование"
-          description="После того, как вы одобрили нашу концепцию, приступаем к делу: реализуем разработанную концепцию веб-дизайна и создаем ваш новый сайт. Уникальность, оптимизированные технологии и четкая структура — краеугольные камни вашего нового присутствия в Интернете. Подробный функциональный тест завершает реализацию вашего сайта."
+          title="Implementation and Testing"
+          description="Once you have approved our concept, we get to work: we implement the developed web design concept and create your new website. Uniqueness, optimized technologies, and a clear structure are the cornerstones of your new online presence. A detailed functional test completes the implementation of your website."
         />
         <StepCircle
           className="step-circle-4 translate-x-4 translate-y-2"
@@ -165,8 +165,8 @@ const HowItWorks = () => {
         <StepCard
           className="step-text-5 my-1 lg:my-7 xl:my-[38px]"
           shadowSide="right"
-          title="Выход в эфир"
-          description="На последнем этапе вы можете еще раз тщательно проверить свой новый веб-сайт, чтобы убедиться, что все ваши пожелания реализованы и что ваша компания представлена ​​в соответствии с вашими идеями. После проверки дайте нам свое одобрение, и наконец пришло время: ваш новый веб-сайт размещен в сети!"
+          title="Go Live"
+          description="At the final stage, you can once again carefully review your new website to ensure that all your preferences are implemented and that your company is represented according to your ideas. After the review, give us your approval, and finally, it's time: your new website is live!"
         />
         <StepCircle
           className="step-circle-5 translate-x-4 translate-y-12"
@@ -184,8 +184,8 @@ const HowItWorks = () => {
           <StepCard
             className="pt-10 text-justify lg:pt-0"
             shadowSide="right"
-            title="Бесплатная консультация"
-            description="Во время бесплатной консультации мы сначала вместе обсудим, как должен выглядеть ваш новый сайт. Мы приветствуем ваши собственные идеи на этом этапе. После обсуждения мы подготовим для вас ни к чему не обязывающее предложение, в котором обеспечим индивидуальные решения по справедливым ценам."
+            title="Free consultation"
+            description="During the free consultation, we will first discuss how your new website should look. We welcome your own ideas at this stage. After the discussion, we will prepare a non-binding proposal for you, providing individual solutions at fair prices."
           />
         </div>
         {/* Шаг 2 */}
@@ -197,8 +197,8 @@ const HowItWorks = () => {
           <StepCard
             className="pt-10 text-justify lg:pt-0"
             shadowSide="right"
-            title="Создание концепции"
-            description="Вам нравится наше предложение? Затем мы сразу приступим к его реализации и создадим концепцию вашего сайта. Ваш корпоративный дизайн служит для нас основой для обеспечения постоянного внешнего вида вашей компании в Интернете и в то же время для поддержки узнаваемости вашего нового веб-сайта."
+            title="Concept Development"
+            description="Do you like our proposal? Then we will immediately start its implementation and create the concept for your website. Your corporate design serves as the foundation for us to ensure a consistent online appearance for your company while supporting the recognition of your new website."
           />
         </div>
         {/* Шаг 3 */}
@@ -210,8 +210,8 @@ const HowItWorks = () => {
           <StepCard
             className="pt-10 text-justify lg:pt-0"
             shadowSide="right"
-            title="Презентация"
-            description="Теперь твоя очередь! Представляя предварительную концепцию, вы можете сообщить нам свои пожелания по корректировке и оптимизации, чтобы ваш новый сайт точно соответствовал вашим идеям и требованиям вашей целевой группы – мы всегда учитываем это при планировании вашего веб-дизайна."
+            title="Presentation"
+            description="Now it's your turn! Introducing the preliminary concept, you can share with us your preferences for adjustments and optimizations, ensuring that your new website precisely aligns with your ideas and the requirements of your target audience – we always take this into account when planning your web design."
           />
         </div>
         {/* Шаг 4 */}
@@ -223,8 +223,8 @@ const HowItWorks = () => {
           <StepCard
             className="pt-10 text-justify lg:pt-0"
             shadowSide="right"
-            title="Реализация и тестирование"
-            description="После того, как вы одобрили нашу концепцию, приступаем к делу: реализуем разработанную концепцию веб-дизайна и создаем ваш новый сайт. Уникальность, оптимизированные технологии и четкая структура — краеугольные камни вашего нового присутствия в Интернете. Подробный функциональный тест завершает реализацию вашего сайта."
+            title="Implementation and Testing"
+            description="Once you have approved our concept, we get to work: we implement the developed web design concept and create your new website. Uniqueness, optimized technologies, and a clear structure are the cornerstones of your new online presence. A detailed functional test completes the implementation of your website."
           />
         </div>
         {/* Шаг 5 */}
@@ -236,8 +236,8 @@ const HowItWorks = () => {
           <StepCard
             className="pt-10 text-justify lg:pt-0"
             shadowSide="right"
-            title="Выход в эфир"
-            description="На последнем этапе вы можете еще раз тщательно проверить свой новый веб-сайт, чтобы убедиться, что все ваши пожелания реализованы и что ваша компания представлена ​​в соответствии с вашими идеями. После проверки дайте нам свое одобрение, и наконец пришло время: ваш новый веб-сайт размещен в сети!"
+            title="Go Live"
+            description="At the final stage, you can once again carefully review your new website to ensure that all your preferences are implemented and that your company is represented according to your ideas. After the review, give us your approval, and finally, it's time: your new website is live!"
           />
         </div>
       </div>

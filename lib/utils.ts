@@ -57,17 +57,17 @@ export const itemLogo = {
 export const OrderSchema = z.object({
   name: z
     .string()
-    .min(1, { message: "Введите ваше имя." })
-    .max(100, { message: "Максимальная длина имени 100 символов." }),
+    .min(1, { message: "Enter your name." })
+    .max(100, { message: "Maximum name length is 100 characters." }),
   email: z
     .string()
-    .email({ message: "Введите корректный email." })
-    .max(100, { message: "Максимальная длина email 100 символов." }),
+    .email({ message: "Enter a valid email." })
+    .max(100, { message: "Maximum email length is 100 characters." }),
   phone: z
     .string()
-    .min(1, { message: "Введите ваш телефон." })
-    .max(50, { message: "Максимальная длина номера 50 символов." }),
-  message: z.string().min(1, { message: "Введите ваше сообщение." }),
+    .min(1, { message: "Enter your phone number." })
+    .max(50, { message: "Maximum phone number length is 50 characters." }),
+  message: z.string().min(1, { message: "Enter your message." }),
 });
 
 export interface State {
